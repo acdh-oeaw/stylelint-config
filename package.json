@@ -1,0 +1,50 @@
+{
+	"name": "@acdh-oeaw/stylelint-config",
+	"version": "0.1.0",
+	"license": "MIT",
+	"main": "./stylelint.config.js",
+	"files": [
+		"./stylelint.config.js"
+	],
+	"packageManager": "pnpm@8.5.1",
+	"scripts": {
+		"ci:release": "changeset publish",
+		"format:check": "prettier . --cache --check --ignore-path ./.gitignore",
+		"format:fix": "pnpm run format:check --write",
+		"prepare": "run-s setup",
+		"setup": "simple-git-hooks || exit 0",
+		"validate": "run-p format:check"
+	},
+	"dependencies": {
+		"stylelint-config-html": "^1.1.0",
+		"stylelint-config-hudochenkov": "^9.0.0",
+		"stylelint-config-standard": "^33.0.0"
+	},
+	"peerDependencies": {
+		"stylelint": ">=15"
+	},
+	"devDependencies": {
+		"@acdh-oeaw/commitlint-config": "^1.0.0",
+		"@acdh-oeaw/prettier-config": "^1.0.0",
+		"@changesets/changelog-github": "^0.4.8",
+		"@changesets/cli": "^2.26.1",
+		"@commitlint/cli": "^17.6.3",
+		"lint-staged": "^13.2.2",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.8.8",
+		"simple-git-hooks": "^2.8.1",
+		"stylelint": "^15.6.2"
+	},
+	"commitlint": {
+		"extends": "@acdh-oeaw/commitlint-config"
+	},
+	"lint-staged": {
+		"*": "prettier --cache --ignore-unknown --write"
+	},
+	"prettier": "@acdh-oeaw/prettier-config",
+	"simple-git-hooks": {
+		"commit-msg": "pnpm exec commitlint --edit",
+		"pre-commit": "pnpm exec lint-staged",
+		"pre-push": "pnpm run validate"
+	}
+}
