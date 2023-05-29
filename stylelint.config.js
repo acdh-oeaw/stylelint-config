@@ -1,5 +1,9 @@
 const config = {
-	extends: ["stylelint-config-standard", "stylelint-config-hudochenkov", "stylelint-config-html"],
+	extends: [
+		"stylelint-config-standard",
+		"stylelint-config-hudochenkov/order",
+		"stylelint-config-html",
+	],
 	reportNeedlessDisables: true,
 	rules: {
 		/** Vendor prefixes should be handled by postcss autoprefixer. */
