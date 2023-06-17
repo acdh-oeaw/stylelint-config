@@ -4,6 +4,7 @@ const config = {
 		"stylelint-config-hudochenkov/order",
 		"stylelint-config-html",
 	],
+	allowEmptyInput: true,
 	reportNeedlessDisables: true,
 	rules: {
 		/** Vendor prefixes should be handled by postcss autoprefixer. */
