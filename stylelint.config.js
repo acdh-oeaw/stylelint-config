@@ -22,6 +22,9 @@ const config = {
 		"font-weight-notation": "numeric",
 		"hue-degree-notation": "angle",
 
+		/** Allow `tailwind` directive. */
+		"at-rule-no-unknown": [true, { ignoreAtRules: ["tailwind"] }],
+
 		/** Overwrite defaults from `stylelint-config-standard` to allow separate `grid-template-rows` and `grid-template-columns`. */
 		"declaration-block-no-redundant-longhand-properties": [true, { ignoreShorthands: ["/grid/"] }],
 
