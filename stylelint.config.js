@@ -38,7 +38,10 @@ const config = {
 		],
 
 		/** Allow css modules `:global()` pseudo class. */
-		"selector-pseudo-class-no-unknown": [true, { ignorePseudoClasses: ["global"] }],
+		"selector-pseudo-class-no-unknown": [
+			true,
+			{ ignorePseudoClasses: ["deep", "global", "slotted"] },
+		],
 
 		/** Dont't error on `text-rendering` camelcase values, use `currentColor`. */
 		"value-keyword-case": ["lower", { camelCaseSvgKeywords: true, ignoreFunctions: ["theme"] }],
