@@ -1,5 +1,13 @@
 # @acdh-oeaw/stylelint-config
 
+## 1.0.5
+
+### Patch Changes
+
+- [`546a21f`](https://github.com/acdh-oeaw/stylelint-config/commit/546a21fd56829ff5751b206abc40eabb1a9049d5)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow deep and slotted pseudo-selectors
+  from vue scoped css
+
 ## 1.0.4
 
 ### Patch Changes
