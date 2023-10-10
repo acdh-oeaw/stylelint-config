@@ -6,7 +6,7 @@
 	"files": [
 		"./stylelint.config.js"
 	],
-	"packageManager": "pnpm@8.6.9",
+	"packageManager": "pnpm@8.9.0",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
@@ -30,12 +30,12 @@
 		"@acdh-oeaw/prettier-config": "^1.0.1",
 		"@changesets/changelog-github": "^0.4.8",
 		"@changesets/cli": "^2.26.2",
-		"@commitlint/cli": "^17.6.7",
-		"lint-staged": "^13.2.3",
-		"npm-run-all2": "^6.0.6",
-		"prettier": "^3.0.0",
-		"simple-git-hooks": "^2.8.1",
-		"stylelint": "^15.10.2"
+		"@commitlint/cli": "^17.7.2",
+		"lint-staged": "^14.0.1",
+		"npm-run-all2": "^6.1.1",
+		"prettier": "^3.0.3",
+		"simple-git-hooks": "^2.9.0",
+		"stylelint": "^15.10.3"
 	},
 	"commitlint": {
 		"extends": "@acdh-oeaw/commitlint-config"
