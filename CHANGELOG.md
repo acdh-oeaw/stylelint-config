@@ -1,5 +1,13 @@
 # @acdh-oeaw/stylelint-config
 
+## 1.0.6
+
+### Patch Changes
+
+- [`b6730ca`](https://github.com/acdh-oeaw/stylelint-config/commit/b6730cabfe4c477d02dcbde66d4fb8153e852225)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow underscore prefix on custom
+  properties
+
 ## 1.0.5
 
 ### Patch Changes
