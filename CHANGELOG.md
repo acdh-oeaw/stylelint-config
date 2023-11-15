@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 1.0.7
+
+### Patch Changes
+
+- [`44d9f29`](https://github.com/acdh-oeaw/stylelint-config/commit/44d9f29d169cec8eca3ca66489c0695a8c358d1b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow longform gap properties
+
 ## 1.0.6
 
 ### Patch Changes
