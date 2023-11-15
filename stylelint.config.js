@@ -34,7 +34,10 @@ const config = {
 		],
 
 		/** Overwrite defaults from `stylelint-config-standard` to allow separate `grid-template-rows` and `grid-template-columns`. */
-		"declaration-block-no-redundant-longhand-properties": [true, { ignoreShorthands: ["/grid/"] }],
+		"declaration-block-no-redundant-longhand-properties": [
+			true,
+			{ ignoreShorthands: ["/gap/", "/grid/"] },
+		],
 
 		/** Allow `theme` function, used e.g. by tailwind. */
 		"function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
