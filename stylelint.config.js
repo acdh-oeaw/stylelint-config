@@ -1,3 +1,4 @@
+/** @type {import('stylelint').Config} */
 const config = {
 	extends: [
 		"stylelint-config-standard",
@@ -59,4 +60,4 @@ const config = {
 	},
 };
 
-module.exports = config;
+export default config;
