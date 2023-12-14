@@ -1,5 +1,13 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.0.0
+
+### Major Changes
+
+- [`74c985d`](https://github.com/acdh-oeaw/stylelint-config/commit/74c985dcc18ca860d01dcc14acce66164a352996)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - require stylelint v16, move config to
+  esm
+
 ## 1.0.7
 
 ### Patch Changes
