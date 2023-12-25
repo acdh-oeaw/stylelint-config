@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- [`5c34fc8`](https://github.com/acdh-oeaw/stylelint-config/commit/5c34fc87d319f186cd64f4c878b4db0e2717e884)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update stylelint
+
 ## 2.0.0
 
 ### Major Changes
