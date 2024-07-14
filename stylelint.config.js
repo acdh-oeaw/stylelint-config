@@ -23,8 +23,8 @@ const config = {
 		"font-weight-notation": "numeric",
 		"hue-degree-notation": "angle",
 
-		/** Allow `tailwind` directive. */
-		"at-rule-no-unknown": [true, { ignoreAtRules: ["tailwind"] }],
+		/** Allow `@tailwind` (v3) directive, and tailwind (v4) `@theme` directive. */
+		"at-rule-no-unknown": [true, { ignoreAtRules: ["tailwind", "theme"] }],
 
 		/** Allow underscore prefix on custom properties. */
 		"custom-property-pattern": [
