@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.0.3
+
+### Patch Changes
+
+- [`596a558`](https://github.com/acdh-oeaw/stylelint-config/commit/596a55874f2e67927a5e950adda67313f8a63ec0)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow @theme tailwind v4 directive
+
 ## 2.0.2
 
 ### Patch Changes
