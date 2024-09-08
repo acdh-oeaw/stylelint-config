@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.0.4
+
+### Patch Changes
+
+- [`69c6c31`](https://github.com/acdh-oeaw/stylelint-config/commit/69c6c312a5d677d434a0df45222ec47d39a00608)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow tailwind v4 at-rules
+
 ## 2.0.3
 
 ### Patch Changes
