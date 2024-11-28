@@ -43,8 +43,11 @@ const config = {
 			{ ignoreShorthands: ["/gap/", "/grid/"] },
 		],
 
-		/** Allow `theme` function, used e.g. by tailwind. */
+		/** Allow `theme` function, used by tailwind. */
 		"function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
+
+		/** Allow `screen` and `theme` functions, used by tailwind. */
+		"media-query-no-invalid": [true, { ignoreFunctions: ["screen", "theme"] }],
 
 		/** Overwrite defaults from `stylelint-config-standard` to allow `#__nuxt`. */
 		"selector-id-pattern": [
