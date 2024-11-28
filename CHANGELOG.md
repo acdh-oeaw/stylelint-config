@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.0.5
+
+### Patch Changes
+
+- [`256492e`](https://github.com/acdh-oeaw/stylelint-config/commit/256492e809e48e04b65cf96c0946d50c984cd9c0)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps, allow screen fn
+
 ## 2.0.4
 
 ### Patch Changes
