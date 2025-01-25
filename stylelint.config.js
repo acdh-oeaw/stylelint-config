@@ -40,9 +40,9 @@ const config = {
 			},
 		],
 
-		/** Allow underscore prefix on custom properties. */
+		/** Allow underscore prefix and double-dash on custom properties. */
 		"custom-property-pattern": [
-			"^_?([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+			"^_?([a-z][a-z0-9]*)(--?[a-z0-9]+)*$",
 			{
 				message: (name) => `Expected custom property name "${name}" to be kebab-case`,
 			},
