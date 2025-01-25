@@ -26,7 +26,18 @@ const config = {
 		/** Allow `@tailwind` (v3) directive, and tailwind (v4) directives. */
 		"at-rule-no-unknown": [
 			true,
-			{ ignoreAtRules: ["tailwind", "config", "plugin", "source", "theme", "utility", "variant"] },
+			{
+				ignoreAtRules: [
+					"config",
+					"custom-variant",
+					"plugin",
+					"source",
+					"tailwind",
+					"theme",
+					"utility",
+					"variant",
+				],
+			},
 		],
 
 		/** Allow underscore prefix on custom properties. */
