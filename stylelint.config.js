@@ -31,6 +31,7 @@ const config = {
 					"config",
 					"custom-variant",
 					"plugin",
+					"reference",
 					"source",
 					"tailwind",
 					"theme",
@@ -54,8 +55,8 @@ const config = {
 			{ ignoreShorthands: ["/gap/", "/grid/"] },
 		],
 
-		/** Allow `theme` function, used by tailwind. */
-		"function-no-unknown": [true, { ignoreFunctions: ["theme"] }],
+		/** Allow functions used by tailwind. */
+		"function-no-unknown": [true, { ignoreFunctions: ["--alpha", "--spacing", "theme"] }],
 
 		/** Allow `screen` and `theme` functions, used by tailwind. */
 		"media-query-no-invalid": [true, { ignoreFunctions: ["screen", "theme"] }],
