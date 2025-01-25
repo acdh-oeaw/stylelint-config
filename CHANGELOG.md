@@ -1,5 +1,23 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.0.6
+
+### Patch Changes
+
+- [`bbde0b0`](https://github.com/acdh-oeaw/stylelint-config/commit/bbde0b07cbddd13b00be5d488d6467976403dde1)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow custom-variant at-rule
+
+- [`b908bfa`](https://github.com/acdh-oeaw/stylelint-config/commit/b908bfacb4eb9889f932646434d979a9db606463)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow reference at-rule
+
+- [`6f6bec9`](https://github.com/acdh-oeaw/stylelint-config/commit/6f6bec928d6aa0e08a2e3447e6f00f0a6704fcdd)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow double dash in custom property
+  name
+
+- [`6178dbb`](https://github.com/acdh-oeaw/stylelint-config/commit/6178dbb7c472b5f741624aa6641bd82520ba7613)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow trailing -\* in custom property
+  names (taiwind css v4)
+
 ## 2.0.5
 
 ### Patch Changes
