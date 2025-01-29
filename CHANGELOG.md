@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.1.0
+
+### Minor Changes
+
+- [`127458f`](https://github.com/acdh-oeaw/stylelint-config/commit/127458fc7402b6831e50fca8db302f957f6433d8)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - change import-notation
+
 ## 2.0.6
 
 ### Patch Changes
