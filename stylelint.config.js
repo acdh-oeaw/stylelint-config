@@ -58,6 +58,9 @@ const config = {
 		/** Allow functions used by tailwind. */
 		"function-no-unknown": [true, { ignoreFunctions: ["--alpha", "--spacing", "theme"] }],
 
+		/** Prefer plain strings over `url()` in `@import` statements. */
+		"import-notation": ["string"],
+
 		/** Allow `screen` and `theme` functions, used by tailwind. */
 		"media-query-no-invalid": [true, { ignoreFunctions: ["screen", "theme"] }],
 
