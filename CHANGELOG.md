@@ -1,5 +1,13 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.1.1
+
+### Patch Changes
+
+- [`77d0ec3`](https://github.com/acdh-oeaw/stylelint-config/commit/77d0ec3db1d57c21437bff9490a4282e9ddc8797)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow underscore comma in css custom
+  property names
+
 ## 2.1.0
 
 ### Minor Changes
