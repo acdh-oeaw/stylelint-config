@@ -1,5 +1,13 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.1.2
+
+### Patch Changes
+
+- [`46988cc`](https://github.com/acdh-oeaw/stylelint-config/commit/46988ccc2abec8e75fbd45978199e9762cc9e48b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - don't treat @apply tailwind directive
+  as deprecated at-rule
+
 ## 2.1.1
 
 ### Patch Changes
