@@ -23,6 +23,14 @@ const config = {
 		"font-weight-notation": "numeric",
 		"hue-degree-notation": "angle",
 
+		/** Allow `@apply` tailwind directive. */
+		"at-rule-no-deprecated": [
+			true,
+			{
+				ignoreAtRules: ["apply"],
+			},
+		],
+
 		/** Allow `@tailwind` (v3) directive, and tailwind (v4) directives. */
 		"at-rule-no-unknown": [
 			true,
