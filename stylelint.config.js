@@ -7,6 +7,8 @@ const config = {
 	],
 	allowEmptyInput: true,
 	reportNeedlessDisables: true,
+	// waiting on https://github.com/stylelint/stylelint/issues/8345
+	ignorePath: [".gitignore", ".stylelintignore"],
 	rules: {
 		/** Vendor prefixes should be handled by postcss autoprefixer. */
 		"at-rule-no-vendor-prefix": true,
