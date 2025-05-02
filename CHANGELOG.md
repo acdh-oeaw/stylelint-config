@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.2.0
+
+### Minor Changes
+
+- [`ccf012d`](https://github.com/acdh-oeaw/stylelint-config/commit/ccf012d54c87cfb07425fb1138ef4490c3dd518a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update config
+
 ## 2.1.2
 
 ### Patch Changes
