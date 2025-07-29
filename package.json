@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/stylelint-config",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"license": "MIT",
 	"type": "module",
 	"main": "./stylelint.config.js",

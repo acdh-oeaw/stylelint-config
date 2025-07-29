@@ -1,5 +1,12 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.3.0
+
+### Minor Changes
+
+- [`ba2eee1`](https://github.com/acdh-oeaw/stylelint-config/commit/ba2eee14ad759e37e87f50691e69ad0be40b890a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update stylelint-config-standard
+
 ## 2.2.0
 
 ### Minor Changes
