@@ -1,5 +1,14 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.3.1
+
+### Patch Changes
+
+- [#24](https://github.com/acdh-oeaw/stylelint-config/pull/24)
+  [`b8a42e9`](https://github.com/acdh-oeaw/stylelint-config/commit/b8a42e90be740baef2f446c358fcf402e81815ca)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - don't require nesting selectors in
+  tailwind utility blocks
+
 ## 2.3.0
 
 ### Minor Changes
