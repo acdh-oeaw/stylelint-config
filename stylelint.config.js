@@ -26,12 +26,10 @@ const config = {
 		"hue-degree-notation": "angle",
 
 		/** Allow `@apply` tailwind directive. */
-		"at-rule-no-deprecated": [
-			true,
-			{
-				ignoreAtRules: ["apply"],
-			},
-		],
+		"at-rule-no-deprecated": [true, { ignoreAtRules: ["apply"] }],
+
+		/** Don't require nesting selectors in tailwind `@utility` blocks. */
+		"nesting-selector-no-missing-scoping-root": [true, { ignoreAtRules: ["utility"] }],
 
 		/** Allow `@tailwind` (v3) directive, and tailwind (v4) directives. */
 		"at-rule-no-unknown": [
