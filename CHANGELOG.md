@@ -1,5 +1,13 @@
 # @acdh-oeaw/stylelint-config
 
+## 2.3.2
+
+### Patch Changes
+
+- [#27](https://github.com/acdh-oeaw/stylelint-config/pull/27)
+  [`22bfeeb`](https://github.com/acdh-oeaw/stylelint-config/commit/22bfeebb04bd77c052f3c386e61cd94f842fca4e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - set order for variant at-rule
+
 ## 2.3.1
 
 ### Patch Changes
