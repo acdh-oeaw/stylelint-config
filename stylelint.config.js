@@ -86,6 +86,37 @@ const config = {
 
 		/** Dont't error on `text-rendering` camelcase values, use `currentColor`. */
 		"value-keyword-case": ["lower", { camelCaseSvgKeywords: true, ignoreFunctions: ["theme"] }],
+
+		"order/order": [
+			[
+				"dollar-variables",
+				"custom-properties",
+				"at-rules",
+				"declarations",
+				{
+					type: "at-rule",
+					name: "supports",
+				},
+				{
+					type: "at-rule",
+					name: "starting-style",
+				},
+				{
+					type: "at-rule",
+					name: "container",
+				},
+				{
+					type: "at-rule",
+					name: "variant",
+				},
+				{
+					type: "at-rule",
+					name: "media",
+				},
+				"rules",
+			],
+			{ severity: "warning" },
+		],
 	},
 };
 
