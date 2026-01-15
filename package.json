@@ -13,50 +13,42 @@
 	"files": [
 		"./stylelint.config.js"
 	],
-	"packageManager": "pnpm@10.12.1",
+	"packageManager": "pnpm@10.28.0",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
-		"ci:version": "changeset version && prettier \"**/CHANGELOG.md\" --write",
-		"format:check": "prettier . --cache --check --ignore-path ./.gitignore",
-		"format:fix": "pnpm run format:check --write",
+		"ci:version": "changeset version && oxfmt CHANGELOG.md --write",
+		"format:check": "oxfmt --check",
+		"format:fix": "oxfmt --write",
 		"prepare": "run-s setup",
-		"setup": "is-ci || simple-git-hooks",
+		"setup": "is-in-ci || simple-git-hooks",
 		"types:check": "tsc --noEmit",
 		"validate": "run-p format:check types:check"
 	},
 	"dependencies": {
 		"stylelint-config-html": "^1.1.0",
 		"stylelint-config-hudochenkov": "^12.0.0",
-		"stylelint-config-standard": "^39.0.0"
+		"stylelint-config-standard": "^39.0.1"
 	},
 	"peerDependencies": {
-		"stylelint": ">=16.23"
+		"stylelint": ">=17"
 	},
 	"devDependencies": {
-		"@acdh-oeaw/commitlint-config": "^2.0.0",
-		"@acdh-oeaw/prettier-config": "^2.0.1",
-		"@changesets/changelog-github": "^0.5.1",
-		"@changesets/cli": "^2.29.5",
-		"@commitlint/cli": "^19.8.1",
-		"is-ci": "^4.1.0",
-		"lint-staged": "^16.1.2",
+		"@changesets/changelog-github": "^0.5.2",
+		"@changesets/cli": "^2.29.8",
+		"is-in-ci": "^2.0.0",
+		"lint-staged": "^16.2.7",
 		"npm-run-all2": "^8.0.4",
-		"prettier": "^3.6.2",
-		"simple-git-hooks": "^2.13.0",
-		"stylelint": "^16.23.0",
-		"typescript": "^5.8.3"
-	},
-	"commitlint": {
-		"extends": "@acdh-oeaw/commitlint-config"
+		"oxfmt": "^0.24.0",
+		"simple-git-hooks": "^2.13.1",
+		"stylelint": "^17.0.0",
+		"typescript": "^5.9.3"
 	},
 	"lint-staged": {
-		"*": "prettier --cache --ignore-unknown --write"
+		"*": "oxfmt --no-error-on-unmatched-pattern --write"
 	},
-	"prettier": "@acdh-oeaw/prettier-config",
 	"simple-git-hooks": {
-		"commit-msg": "pnpm exec commitlint --edit",
 		"pre-commit": "pnpm exec lint-staged",
 		"pre-push": "pnpm run validate"
 	}
