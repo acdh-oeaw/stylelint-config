@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/stylelint-config",
-	"version": "2.3.2",
+	"version": "3.0.0",
 	"license": "MIT",
 	"repository": {
 		"url": "https://github.com/acdh-oeaw/stylelint-config"
