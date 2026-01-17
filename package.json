@@ -28,7 +28,7 @@
 	},
 	"dependencies": {
 		"stylelint-config-html": "^1.1.0",
-		"stylelint-config-hudochenkov": "^12.0.0",
+		"stylelint-config-hudochenkov": "^12.0.1",
 		"stylelint-config-standard": "^40.0.0"
 	},
 	"peerDependencies": {
