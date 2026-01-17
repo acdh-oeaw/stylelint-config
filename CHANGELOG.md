@@ -1,5 +1,11 @@
 # @acdh-oeaw/stylelint-config
 
+## 3.0.1
+
+### Patch Changes
+
+- [#32](https://github.com/acdh-oeaw/stylelint-config/pull/32) [`cbce358`](https://github.com/acdh-oeaw/stylelint-config/commit/cbce358519179d510ca7217e5cce4f3fafe89461) Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps for stylelint v17
+
 ## 3.0.0
 
 ### Major Changes
