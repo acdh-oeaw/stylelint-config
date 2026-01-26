@@ -1,5 +1,11 @@
 # @acdh-oeaw/stylelint-config
 
+## 3.0.2
+
+### Patch Changes
+
+- [#35](https://github.com/acdh-oeaw/stylelint-config/pull/35) [`f7bbcb6`](https://github.com/acdh-oeaw/stylelint-config/commit/f7bbcb6cfb98a49d678506b3e73856300527061d) Thanks [@stefanprobst](https://github.com/stefanprobst)! - add types
+
 ## 3.0.1
 
 ### Patch Changes
