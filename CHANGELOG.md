@@ -1,5 +1,11 @@
 # @acdh-oeaw/stylelint-config
 
+## 3.0.3
+
+### Patch Changes
+
+- [#37](https://github.com/acdh-oeaw/stylelint-config/pull/37) [`0396dc1`](https://github.com/acdh-oeaw/stylelint-config/commit/0396dc1450d0efee167666dd4e5d2fcd2c39058c) Thanks [@stefanprobst](https://github.com/stefanprobst)! - include types in package
+
 ## 3.0.2
 
 ### Patch Changes
