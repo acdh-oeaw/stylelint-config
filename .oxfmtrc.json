@@ -1,8 +1,8 @@
 {
 	"$schema": "./node_modules/oxfmt/configuration_schema.json",
-	"experimentalSortImports": {
-		"groups": [["side-effect"], ["builtin"], ["external"], ["internal", "subpath"], ["unknown"]]
+	"sortImports": {
+		"groups": [["side_effect"], ["builtin"], ["external"], ["internal", "subpath"], ["unknown"]]
 	},
-	"experimentalSortPackageJson": false,
+	"sortPackageJson": false,
 	"useTabs": true
 }

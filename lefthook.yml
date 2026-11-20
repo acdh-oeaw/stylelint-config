@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://json.schemastore.org/lefthook.json
+
+pre-commit:
+  commands:
+    format:
+      run: pnpm exec oxfmt --no-error-on-unmatched-pattern --write {staged_files}
+      stage_fixed: true
+
+pre-push:
+  parallel: true
+  commands:
+    format:
+      run: pnpm run format:check
+    types:
+      run: pnpm run types:check
