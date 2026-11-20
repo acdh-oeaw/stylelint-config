@@ -1,5 +1,15 @@
 # @acdh-oeaw/stylelint-config
 
+## 4.0.0
+
+### Major Changes
+
+- [#39](https://github.com/acdh-oeaw/stylelint-config/pull/39) [`a29525f`](https://github.com/acdh-oeaw/stylelint-config/commit/a29525f567f2205d98dcde7e4080e9641f2e24b6) Thanks [@stefanprobst](https://github.com/stefanprobst)! - update to stylelint v18
+
+  **breaking:** requires stylelint >= 18, and node.js `^22.22.2 || ^24.15.0 || >=26.0.0`.
+
+  also allow tailwind functions (`theme()`, `--spacing()`, `--alpha()`) in `declaration-property-value-no-unknown`.
+
 ## 3.0.3
 
 ### Patch Changes
