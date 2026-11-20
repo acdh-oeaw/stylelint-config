@@ -7,8 +7,8 @@
 	"editor.rulers": [100],
 	"files.eol": "\n",
 	"terminal.integrated.enablePersistentSessions": false,
-	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"typescript.tsdk": "node_modules/typescript/lib",
+	"js/ts.tsdk.path": "node_modules/typescript/lib",
+	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
 	"[markdown]": {
 		"editor.wordWrap": "on"
 	}

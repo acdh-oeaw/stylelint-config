@@ -66,6 +66,12 @@ const config = {
 		/** Allow functions used by tailwind. */
 		"function-no-unknown": [true, { ignoreFunctions: ["--alpha", "--spacing", "theme"] }],
 
+		/** Don't report values containing functions used by tailwind as unknown. */
+		"declaration-property-value-no-unknown": [
+			true,
+			{ ignoreProperties: { "/.+/": ["/(?:^|[^\\w-])(?:--alpha|--spacing|theme)\\(/"] } },
+		],
+
 		/** Prefer plain strings over `url()` in `@import` statements. */
 		"import-notation": ["string"],
 

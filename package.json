@@ -5,52 +5,56 @@
 	"repository": {
 		"url": "https://github.com/acdh-oeaw/stylelint-config"
 	},
+	"files": [
+		"./index.js",
+		"./index.d.ts"
+	],
 	"type": "module",
 	"main": "./index.js",
 	"exports": {
 		"default": "./index.js"
 	},
-	"files": [
-		"./index.js",
-		"./index.d.ts"
-	],
-	"packageManager": "pnpm@10.28.0",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
-		"ci:version": "changeset version && oxfmt CHANGELOG.md --write",
+		"ci:version": "changeset version",
 		"format:check": "oxfmt --check",
 		"format:fix": "oxfmt --write",
-		"prepare": "run-s setup",
-		"setup": "is-in-ci || simple-git-hooks",
-		"types:check": "tsc --noEmit",
-		"validate": "run-p format:check types:check"
+		"prepare": "lefthook install",
+		"types:check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"stylelint-config-html": "^1.1.0",
-		"stylelint-config-hudochenkov": "^12.0.1",
-		"stylelint-config-standard": "^40.0.0"
-	},
-	"peerDependencies": {
-		"stylelint": ">=17"
+		"postcss-html": "^2.0.1",
+		"stylelint-config-html": "^2.0.0",
+		"stylelint-config-hudochenkov": "^14.0.0",
+		"stylelint-config-standard": "^41.0.0",
+		"stylelint-order": "^8.1.3"
 	},
 	"devDependencies": {
-		"@changesets/changelog-github": "^0.5.2",
-		"@changesets/cli": "^2.29.8",
-		"is-in-ci": "^2.0.0",
-		"lint-staged": "^16.2.7",
-		"npm-run-all2": "^8.0.4",
-		"oxfmt": "^0.24.0",
-		"simple-git-hooks": "^2.13.1",
-		"stylelint": "^17.0.0",
-		"typescript": "^5.9.3"
+		"@changesets/changelog-github": "^1.0.1",
+		"@changesets/cli": "^3.0.3",
+		"lefthook": "^2.2.2",
+		"oxfmt": "^0.79.0",
+		"stylelint": "^18.0.0",
+		"typescript": "^7.0.2"
 	},
-	"lint-staged": {
-		"*": "oxfmt --no-error-on-unmatched-pattern --write"
+	"peerDependencies": {
+		"stylelint": ">=18"
 	},
-	"simple-git-hooks": {
-		"pre-commit": "pnpm exec lint-staged",
-		"pre-push": "pnpm run validate"
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.21.0",
+			"onFail": "download"
+		},
+		"runtime": {
+			"name": "node",
+			"version": "26.13.1",
+			"onFail": "download"
+		}
+	},
+	"engines": {
+		"node": "^22.22.2 || ^24.15.0 || ^26.0.0"
 	}
 }
