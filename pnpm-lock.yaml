@@ -180,16 +180,16 @@ importers:
         version: 2.0.1(postcss@8.5.33)
       stylelint-config-html:
         specifier: ^2.0.0
-        version: 2.0.0(postcss-html@2.0.1(postcss@8.5.33))(stylelint@18.1.0)
+        version: 2.0.0(postcss-html@2.0.1(postcss@8.5.33))(stylelint@18.0.0)
       stylelint-config-hudochenkov:
         specifier: ^14.0.0
-        version: 14.0.0(stylelint-order@8.1.3(stylelint@18.1.0))(stylelint@18.1.0)
+        version: 14.0.0(stylelint-order@8.1.3(stylelint@18.0.0))(stylelint@18.0.0)
       stylelint-config-standard:
         specifier: ^41.0.0
-        version: 41.1.0(stylelint@18.1.0)
+        version: 41.0.0(stylelint@18.0.0)
       stylelint-order:
         specifier: ^8.1.3
-        version: 8.1.3(stylelint@18.1.0)
+        version: 8.1.3(stylelint@18.0.0)
     devDependencies:
       '@changesets/changelog-github':
         specifier: ^1.0.1
@@ -208,7 +208,7 @@ importers:
         version: 0.79.0
       stylelint:
         specifier: ^18.0.0
-        version: 18.1.0
+        version: 18.0.0
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -954,10 +954,6 @@ packages:
     resolution: {integrity: sha512-2WCqLdt12eN6ehLI50S2/ZxoowXU3DD1KVPRyVP0WEsFahrGZZmCdq1K59qjJljMRIDTwx1D9YaRK+hDneBUMg==}
     engines: {node: '>=20'}
 
-  source-map-js@1.2.1:
-    resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
-    engines: {node: '>=0.10.0'}
-
   source-map-js@1.2.4:
     resolution: {integrity: sha512-J7ZjMvHd9O1fcT/5V09QWaaSl2BbWx3F6O08spde82Namf9UB0GxRVIPiNbVsdKkoizHiSpTodo3vp2bAy91MA==}
     engines: {node: '>=6.0.0'}
@@ -975,14 +971,14 @@ packages:
       stylelint: ^18.0.0
       stylelint-order: ^8.1.3
 
-  stylelint-config-recommended@19.1.0:
-    resolution: {integrity: sha512-DurXBzvz2cmVX2rM1JMDCbPIq+MRKhIPY743lFk1DjUoyx7giLfN+HR8Hilw+kE2nE5blaXhVf66edvQGnLdwA==}
+  stylelint-config-recommended@19.0.0:
+    resolution: {integrity: sha512-Y15XB19RManqBOpbRC42tF8R/Hfe314xYLzedRlnnYxYzZ0777RakDQIGcqYfrz9jWGoVyjaGTdpSl9F+roOOw==}
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     peerDependencies:
       stylelint: ^18.0.0
 
-  stylelint-config-standard@41.1.0:
-    resolution: {integrity: sha512-Z7PiQpBffnqu7U5h/FeBWCYZsRsZXa1J8MjkpgcciphLJULysDcu2jKXuSrPgnQGow9x0T+pOfblqRA5cSE6aw==}
+  stylelint-config-standard@41.0.0:
+    resolution: {integrity: sha512-EJIvMOMARieBOLhw2yzN7BaVFiIY2Ex8CkbXahxP6tQZK41+N8OVUo57Uvx9iTr862h+thqDoDH7vQbeth1ryg==}
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     peerDependencies:
       stylelint: ^18.0.0
@@ -993,8 +989,8 @@ packages:
     peerDependencies:
       stylelint: ^16.18.0 || ^17.0.0 || ^18.0.0
 
-  stylelint@18.1.0:
-    resolution: {integrity: sha512-QbF/IY7KY6lZRhYU/vmPU1KYxc71wgkXdgeptqzTh3lbnZps6WHaskfPjpL6Fh4JaCzwkKKitVcMrpfQTSwwPA==}
+  stylelint@18.0.0:
+    resolution: {integrity: sha512-kI10GsHXQvsH/AcklVZdQgwDuxtHi+A+h1Ujzd7h9LDf3e5jQiLQkWFlPtpynX3E6oVWHG1wo9v6dL0Mr+nnSA==}
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     hasBin: true
 
@@ -1331,7 +1327,7 @@ snapshots:
   css-tree@3.2.1:
     dependencies:
       mdn-data: 2.27.1
-      source-map-js: 1.2.1
+      source-map-js: 1.2.4
 
   dataloader@2.2.3: {}
 
@@ -1517,36 +1513,34 @@ snapshots:
 
   sisteransi@2.0.0: {}
 
-  source-map-js@1.2.1: {}
-
   source-map-js@1.2.4: {}
 
-  stylelint-config-html@2.0.0(postcss-html@2.0.1(postcss@8.5.33))(stylelint@18.1.0):
+  stylelint-config-html@2.0.0(postcss-html@2.0.1(postcss@8.5.33))(stylelint@18.0.0):
     dependencies:
       postcss-html: 2.0.1(postcss@8.5.33)
-      stylelint: 18.1.0
+      stylelint: 18.0.0
 
-  stylelint-config-hudochenkov@14.0.0(stylelint-order@8.1.3(stylelint@18.1.0))(stylelint@18.1.0):
+  stylelint-config-hudochenkov@14.0.0(stylelint-order@8.1.3(stylelint@18.0.0))(stylelint@18.0.0):
     dependencies:
-      stylelint: 18.1.0
-      stylelint-order: 8.1.3(stylelint@18.1.0)
+      stylelint: 18.0.0
+      stylelint-order: 8.1.3(stylelint@18.0.0)
 
-  stylelint-config-recommended@19.1.0(stylelint@18.1.0):
+  stylelint-config-recommended@19.0.0(stylelint@18.0.0):
     dependencies:
-      stylelint: 18.1.0
+      stylelint: 18.0.0
 
-  stylelint-config-standard@41.1.0(stylelint@18.1.0):
+  stylelint-config-standard@41.0.0(stylelint@18.0.0):
     dependencies:
-      stylelint: 18.1.0
-      stylelint-config-recommended: 19.1.0(stylelint@18.1.0)
+      stylelint: 18.0.0
+      stylelint-config-recommended: 19.0.0(stylelint@18.0.0)
 
-  stylelint-order@8.1.3(stylelint@18.1.0):
+  stylelint-order@8.1.3(stylelint@18.0.0):
     dependencies:
       postcss: 8.5.33
       postcss-sorting: 10.0.0(postcss@8.5.33)
-      stylelint: 18.1.0
+      stylelint: 18.0.0
 
-  stylelint@18.1.0:
+  stylelint@18.0.0:
     dependencies:
       '@csstools/css-calc': 3.4.4(@csstools/css-parser-algorithms@4.0.3(@csstools/css-tokenizer@4.0.3))(@csstools/css-tokenizer@4.0.3)
       '@csstools/css-parser-algorithms': 4.0.3(@csstools/css-tokenizer@4.0.3)
