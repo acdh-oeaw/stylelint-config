@@ -5,15 +5,15 @@
 	"repository": {
 		"url": "https://github.com/acdh-oeaw/stylelint-config"
 	},
+	"files": [
+		"./index.js",
+		"./index.d.ts"
+	],
 	"type": "module",
 	"main": "./index.js",
 	"exports": {
 		"default": "./index.js"
 	},
-	"files": [
-		"./index.js",
-		"./index.d.ts"
-	],
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
@@ -24,8 +24,23 @@
 		"prepare": "lefthook install",
 		"types:check": "tsc --noEmit"
 	},
-	"engines": {
-		"node": "^22.22.2 || ^24.15.0 || ^26.0.0"
+	"dependencies": {
+		"postcss-html": "^2.0.1",
+		"stylelint-config-html": "^2.0.0",
+		"stylelint-config-hudochenkov": "^14.0.0",
+		"stylelint-config-standard": "^41.0.0",
+		"stylelint-order": "^8.1.3"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "^1.0.1",
+		"@changesets/cli": "^3.0.3",
+		"lefthook": "^2.2.2",
+		"oxfmt": "^0.79.0",
+		"stylelint": "^18.0.0",
+		"typescript": "^7.0.2"
+	},
+	"peerDependencies": {
+		"stylelint": ">=18"
 	},
 	"devEngines": {
 		"packageManager": {
@@ -39,22 +54,7 @@
 			"onFail": "download"
 		}
 	},
-	"dependencies": {
-		"postcss-html": "^2.0.1",
-		"stylelint-config-html": "^2.0.0",
-		"stylelint-config-hudochenkov": "^14.0.0",
-		"stylelint-config-standard": "^41.0.0",
-		"stylelint-order": "^8.1.3"
-	},
-	"peerDependencies": {
-		"stylelint": ">=18"
-	},
-	"devDependencies": {
-		"@changesets/changelog-github": "^1.0.1",
-		"@changesets/cli": "^3.0.3",
-		"lefthook": "^2.2.2",
-		"oxfmt": "^0.79.0",
-		"stylelint": "^18.0.0",
-		"typescript": "^7.0.2"
+	"engines": {
+		"node": "^22.22.2 || ^24.15.0 || ^26.0.0"
 	}
 }

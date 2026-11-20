@@ -3,6 +3,6 @@
 	"sortImports": {
 		"groups": [["side_effect"], ["builtin"], ["external"], ["internal", "subpath"], ["unknown"]]
 	},
-	"sortPackageJson": false,
+	"sortPackageJson": true,
 	"useTabs": true
 }
